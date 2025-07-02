@@ -37,7 +37,8 @@ Gehostet über **GitHub Pages**. Wird später noch mit JS erweitert.
 
 ## 🔗 Live-Version
 
-➡️ [Hier geht’s zur Live-Seite](https://github.com/MarcCark/GitHub-Homepage/edit/main/index.html)  
+➡️ [Hier geht’s zur Live-Seite](https://marccark.github.io/GitHub-Homepage/
+)  
 
 ---
 
