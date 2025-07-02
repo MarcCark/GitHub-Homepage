@@ -37,13 +37,16 @@ header .container {
     width: 100%;
 }
 
-.nav div {
+.nav a {
     cursor: pointer;
     background-color: #0a9396;
     padding: 0.5rem 1rem;
     border-radius: 4px;
     text-align: center;
+    color: white;
+    text-decoration: none;
 }
+
 
 main {
     flex: 1;
