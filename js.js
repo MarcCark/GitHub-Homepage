@@ -41,7 +41,7 @@ const skills = [
         },
         { 
             name: "IBM Z", 
-            level: 35,
+            level: 30,
             desc: "Grundkenntnisse in IBM Z: Vertraut mit z/OS, TSO, ISPF und grundlegender JCL durch das IBM Z Xplore Concept Badge. Erste praktische Erfahrungen im Umgang mit Mainframe-Werkzeugen und Jobsteuerung gesammelt."
         }
     ];
