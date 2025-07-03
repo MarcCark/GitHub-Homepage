@@ -19,7 +19,7 @@
             </div>
                 <div class="nav">
                     <a href="index.html">Startseite</a>
-                    <a class="button-active" project.html">Projekte</a>
+                    <a class="button-active" href="project.html">Projekte</a>
                     <a href="project.html">Skills
                     <a href="impressum.html">Impressum</a>
             </div>
@@ -39,20 +39,37 @@
                 <div class="techstack">Java Script • HTML • CSS</div>
                 <div class="buttons">
                     <a href="https://marccark.github.io/Taschenrechner/" class="btn">GitHub öffnen</a>
-                    <a href="https://github.com/MarcCark/Taschenrechner?tab=readme-ov-file" class="btn secondary">Mehr Infos</a>
+                    <div class="dropdown">
+                            <button class="btn secondary dropdown-toggle">Mehr Infos</button>
+                            <div class="dropdown-menu">
+                                <a href="https://github.com/MarcCark/Taschenrechner?tab=readme-ov-file" target="_blank">GitHub ReadMe</a>
+                                <a href="#">Zusammenfassung</a>
+                            </div>
+                    </div>
                 </div>
                 </div>
 
                 <div class="project-card">
-                <img src="./pictures/whisperlogo-new.jpg" alt="Whisper Bash Logo">
-                <h3>Speech to Text Skript</h3>
-                <p>Ein Bash Skript wandelt via whisper.cpp Sprache in Text um. Ausgabe wird in einer Textdatei gespeichert, wenn gewollt</p>
-                <div class="techstack">Bash • whisper.cpp • ffmpeg </div>
-                <div class="buttons">
-                    <a href="#" class="btn">GitHub öffnen</a>
-                    <a href="#" class="btn secondary">Mehr Infos</a>
+                    <img src="./pictures/whisperlogo-new.jpg" alt="Whisper Bash Logo">
+                    <h3>Speech to Text Skript</h3>
+                    <p>Ein Bash Skript wandelt via whisper.cpp Sprache in Text um. Ausgabe wird in einer Textdatei gespeichert, wenn gewollt</p>
+                    <div class="techstack">
+                        Bash • whisper.cpp • ffmpeg
+                    </div>
+                    
+                    <div class="buttons">
+                        <a href="#" class="btn">GitHub öffnen</a>
+                        <div class="dropdown">
+                            <button class="btn secondary dropdown-toggle">Mehr Infos</button>
+                            <div class="dropdown-menu">
+                                <a href="https://github.com/MarcCark/OGG-to-Text-mit-Whisper" target="_blank">GitHub ReadMe</a>
+                                <a href="#">Zusammenfassung</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                </div>
+
+                
                 
                 <!-- Weitere Projektkarten hier einfügen -->
 
@@ -66,6 +83,32 @@
         Tel: 0176/63034733</p>
         </div>
     </footer>
+
+
+
+    <script>
+        document.querySelectorAll('.dropdown-toggle').forEach(btn => {
+            btn.addEventListener('click', () => {
+            const dropdown = btn.parentElement;
+            dropdown.classList.toggle('show');
+            });
+        });
+
+        // Optional: Dropdown schließt, wenn man woanders klickt
+        window.addEventListener('click', function(e) {
+            document.querySelectorAll('.dropdown').forEach(dropdown => {
+            if (!dropdown.contains(e.target)) {
+                dropdown.classList.remove('show');
+            }
+            });
+        });
+</script>
+
+
+
+
+
+
 
 </body>
 </html>
