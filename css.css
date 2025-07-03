@@ -281,3 +281,57 @@ a[href^="mailto:"]:hover {
     font-size: large;
     line-height: 2;
 }
+
+/* Skill Leiste ########################################################################### */
+
+.skills-heading {
+    font-size:xx-large;
+    text-align: center;
+}
+
+.skill-item {
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.skill-title {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.skill-bar {
+  background-color: #ddd;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.skill-level {
+  background-color: #0a9396;
+  height: 100%;
+  width: var(--target-width, 0%);
+  transition: width 1s ease-out;
+}
+
+.skills-details {
+  margin-top: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.skill-item.active .skill-desc {
+  font-style: italic;
+  color: #333;
+}
+
+.skill-desc {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.skill-item.active .skill-desc {
+  max-height: 200px; /* Passe den Wert ggf. an */
+  font-style: italic;
+  color: #333;
+}

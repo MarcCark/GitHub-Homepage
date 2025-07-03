@@ -84,31 +84,6 @@
         </div>
     </footer>
 
-
-
-    <script>
-        document.querySelectorAll('.dropdown-toggle').forEach(btn => {
-            btn.addEventListener('click', () => {
-            const dropdown = btn.parentElement;
-            dropdown.classList.toggle('show');
-            });
-        });
-
-        // Optional: Dropdown schließt, wenn man woanders klickt
-        window.addEventListener('click', function(e) {
-            document.querySelectorAll('.dropdown').forEach(dropdown => {
-            if (!dropdown.contains(e.target)) {
-                dropdown.classList.remove('show');
-            }
-            });
-        });
-</script>
-
-
-
-
-
-
-
+    <script src="js.js"></script>
 </body>
 </html>
