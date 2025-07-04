@@ -127,3 +127,22 @@ const skills = [
             }
         });
     });
+
+
+// DATENSCHUTZ POPUP
+window.addEventListener('DOMContentLoaded', () => {
+    const popup = document.getElementById('privacy-popup');
+    const button = document.getElementById('accept-privacy');
+
+    if (!localStorage.getItem('privacyAccepted')) {
+        setTimeout(() => {
+            popup.classList.add('show');
+        }, 300); // Delay für sanften Start
+    }
+
+    button.addEventListener('click', () => {
+        popup.classList.remove('show');
+        localStorage.setItem('privacyAccepted', 'true');
+    });
+});
+
