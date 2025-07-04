@@ -404,3 +404,56 @@ a.github-link:hover {
     }
 }
 
+/* Datenschutz-Popup ############################################################ */
+
+.privacy-popup {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 90%;
+  width: 500px;
+  background-color: #ffffff;
+  color: #222;
+  border: 1px solid #ccc;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  z-index: 9999;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.privacy-popup.show {
+  display: block;
+  opacity: 1;
+}
+
+.privacy-popup p {
+  margin: 0 0 1rem 0;
+  text-align: center;
+}
+
+.privacy-popup a {
+  color: #0a9396;
+  text-decoration: underline;
+}
+
+.privacy-popup button {
+  background-color: #0a9396;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.95rem;
+  transition: background-color 0.3s ease;
+}
+
+.privacy-popup button:hover {
+  background-color: #065e69;
+}
