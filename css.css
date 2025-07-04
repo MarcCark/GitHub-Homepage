@@ -26,7 +26,7 @@ header .container {
 }
 
 .logo img {
-    width: 40px;
+    width: 80px;
     height: auto;
 }
 
@@ -168,6 +168,17 @@ a[href^="mailto:"]:hover {
     color: #0a9396;
 }
 
+a.github-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+a.github-link:hover {
+    text-decoration: underline;
+    color: #0a9396; /* oder deine Wunschfarbe */
+}
+
+
 
 /* Project Section ########################################################################### */
 
@@ -277,9 +288,10 @@ a[href^="mailto:"]:hover {
 /* Impressum ########################################################################### */
 
 .impressum-container {
-    text-align: center;
-    font-size: large;
-    line-height: 2;
+  
+  text-align: center;
+  font-size: large;
+  line-height: 2;
 }
 
 /* Skill Leiste ########################################################################### */
