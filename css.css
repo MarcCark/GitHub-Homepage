@@ -7,6 +7,11 @@ body {
 }
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
     background-color: #065e69;
     color: #fff;
     padding: 1rem 0;
@@ -64,7 +69,7 @@ header .container {
 
 main {
     flex: 1;
-    padding: 1rem;
+     padding: 6rem 1rem 1rem 1rem;
     background-color: #b2e5e6;
 }
 
@@ -409,14 +414,30 @@ a.github-link:hover {
 /* Nur für Mobile: unter 600px Bildschirmbreite */
 @media (max-width: 599px) {
 
-    /* Burger-Button sichtbar & mittig */
+    /* Header-Inhalt horizontal: Logo links, Burger rechts */
+    header .container {
+        flex-direction: row;                  /* statt column → nebeneinander */
+        justify-content: space-between;       /* Platz zwischen Logo & Burger */
+        align-items: center;                  /* vertikal zentriert */
+        gap: 1rem;
+    }
+
+    /* Logo + Text links gruppieren */
+    .logontext {
+        flex-grow: 1;                         /* nimmt den verfügbaren Platz */
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    /* Burger-Button sichtbar & ganz rechts */
     .burger-menu {
         display: block;
-        margin: 0 auto;
+        margin: 0;                            /* zentrieren verhindern */
         padding: 0.5rem 1rem;
     }
 
-    /* Navigation ist standardmäßig versteckt */
+    /* Navigation ist zunächst versteckt */
     .nav {
         display: none;
         flex-direction: column;
@@ -426,16 +447,9 @@ a.github-link:hover {
         padding: 1rem 0;
     }
 
-    /* Navigation wird angezeigt, wenn .show gesetzt ist (per JS) */
+    /* Navigation sichtbar bei JS-Klasse ".show" */
     .nav.show {
         display: flex;
-    }
-
-    /* Optional: Zentriere auch das gesamte Header-Innenleben */
-    header .container {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
     }
 }
 
