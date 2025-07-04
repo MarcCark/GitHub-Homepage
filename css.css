@@ -301,11 +301,6 @@ a.github-link:hover {
 
 /* Skill Leiste ########################################################################### */
 
-.skills-heading {
-    font-size:xx-large;
-    text-align: center;
-}
-
 .skill-item {
   margin-bottom: 1rem;
   cursor: pointer;
@@ -330,71 +325,27 @@ a.github-link:hover {
   transition: width 1s ease-out;
 }
 
-.skills-details {
-  margin-top: 1rem;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.skill-item.active .skill-desc {
-  font-style: italic;
-  color: #333;
-}
-
 .skill-desc {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease;
-}
-
-.skill-item.active .skill-desc {
-  max-height: 200px; /* Passe den Wert ggf. an */
+  padding: 0 0.75rem;
+  margin-top: 0.5rem;
+  border-radius: 6px;
+  transition: max-height 0.4s ease, padding 0.2s ease;
   font-style: italic;
   color: #333;
 }
 
-/* Datenschutz Popup####################################################################### */
-
-.privacy-popup {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
-    max-width: 500px;
-    background-color: #065e69;
-    color: #fff;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-    z-index: 9999;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-    font-size: 0.9rem;
-
-    /* Animationseffekt: Startzustand */
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-    visibility: hidden;
+/* Sichtbar machen */
+.skill-item.active .skill-desc {
+  max-height: 500px;
+  padding: 0;
+  background-color: transparent;
+  color: #444;
+  font-style: normal;
 }
 
-.privacy-popup.show {
-    /* Zielzustand nach Einblendung */
-    opacity: 1;
-    transform: translateY(0);
-    visibility: visible;
-}
 
-.privacy-popup button {
-    background-color: #0a9396;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    border-radius: 4px;
-}
 
 /* Burger Menü############################################################ */
 
