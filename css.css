@@ -391,3 +391,51 @@ a.github-link:hover {
     border-radius: 4px;
 }
 
+/* Burger Menü############################################################ */
+
+/* Burger-Menü Standardzustand: Desktop → nicht anzeigen */
+.burger-menu {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+
+/* Nur für Mobile: unter 600px Bildschirmbreite */
+@media (max-width: 599px) {
+
+    /* Burger-Button sichtbar & mittig */
+    .burger-menu {
+        display: block;
+        margin: 0 auto;
+        padding: 0.5rem 1rem;
+    }
+
+    /* Navigation ist standardmäßig versteckt */
+    .nav {
+        display: none;
+        flex-direction: column;
+        gap: 0.5rem;
+        background-color: #065e69;
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    /* Navigation wird angezeigt, wenn .show gesetzt ist (per JS) */
+    .nav.show {
+        display: flex;
+    }
+
+    /* Optional: Zentriere auch das gesamte Header-Innenleben */
+    header .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
