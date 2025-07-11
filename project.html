@@ -15,26 +15,29 @@
 <body>
 
     <header>
-    <div class="container">
-        <div class="logontext">
-            <div class="logo">
-                <img src="./pictures/pixel avatar cropped.png" alt="MarcCark Avatar. A Slowpoke with a NY cap">
+        <div class="container">
+            <div class="logontext">
+                <div class="logo">
+                    <img src="./pictures/pixel avatar cropped.png" alt="MarcCark Avatar. A Slowpoke with a NY cap">
+                </div>
+                <h1>Meine GitHub Homepage</h1>
             </div>
-            <h1>Meine GitHub Homepage</h1>
-        </div>
-        <button id="burger-toggle" class="burger-menu" aria-label="Menü öffnen">
-            ☰
-        </button>
-    </div>
+            <button id="burger-toggle" class="burger-menu" aria-label="Menü öffnen">
+                ☰
+            </button>
 
-    <!-- Navigation außerhalb vom .container → klappt unterhalb auf -->
-    <div class="nav">
-        <a class="button-active" href="index.html">Startseite</a>
-        <a href="project.html">Projekte</a>
-        <a href="project.html">Skills</a>
-        <a href="impressum.html">Impressum</a>
-    </div>
+            <div class="nav">
+                        <a class="button-active" href="index.html">Startseite</a>
+                        <a href="project.html">Projekte</a>
+                        <a href="project.html">Skills</a>
+                        <a href="impressum.html">Impressum</a>
+            </div>
+
+        </div>
+
+        
     </header>
+
 
     <main>
         <section class="projects-section">
@@ -43,20 +46,20 @@
             <div class="project-grid">
                 
                 <div class="project-card">
-                <img src="./pictures/taschenrechner.jpg" alt="Bild von Taschenrechner Projekt">
-                <h3>Taschenrechner mit JS</h3>
-                <p>Ein mit HTML, CSS und JavaScript programmierter Taschenrechner, mit Basisfunktionen</p>
-                <div class="techstack">Java Script • HTML • CSS</div>
-                <div class="buttons">
-                    <a href="https://marccark.github.io/Taschenrechner/" class="btn">GitHub öffnen</a>
-                    <div class="dropdown">
-                            <button class="btn secondary dropdown-toggle">Mehr Infos</button>
-                            <div class="dropdown-menu">
-                                <a href="https://github.com/MarcCark/Taschenrechner?tab=readme-ov-file" target="_blank">GitHub ReadMe</a>
-                                <a href="#">Zusammenfassung</a>
-                            </div>
+                    <img src="./pictures/taschenrechner.jpg" alt="Bild von Taschenrechner Projekt">
+                    <h3>Taschenrechner mit JS</h3>
+                    <p>Ein mit HTML, CSS und JavaScript programmierter Taschenrechner, mit Basisfunktionen</p>
+                    <div class="techstack">Java Script • HTML • CSS</div>
+                    <div class="buttons">
+                        <a href="https://marccark.github.io/Taschenrechner/" class="btn">GitHub öffnen</a>
+                        <div class="dropdown">
+                                <button class="btn secondary dropdown-toggle">Mehr Infos</button>
+                                <div class="dropdown-menu">
+                                    <a href="https://github.com/MarcCark/Taschenrechner?tab=readme-ov-file" target="_blank">GitHub ReadMe</a>
+                                    <a href="#">Zusammenfassung</a>
+                                </div>
+                        </div>
                     </div>
-                </div>
                 </div>
 
                 <div class="project-card">
@@ -65,6 +68,26 @@
                     <p>Ein Bash Skript wandelt via whisper.cpp Sprache in Text um.Auf Wunsch wird Ausgabe in einer Textdatei gespeichert.</p>
                     <div class="techstack">
                         Bash • whisper.cpp • ffmpeg
+                    </div>
+                    
+                    <div class="buttons">
+                        <a href="#" class="btn">GitHub öffnen</a>
+                        <div class="dropdown">
+                            <button class="btn secondary dropdown-toggle">Mehr Infos</button>
+                            <div class="dropdown-menu">
+                                <a href="https://github.com/MarcCark/OGG-to-Text-mit-Whisper" target="_blank">GitHub ReadMe</a>
+                                <a href="#">Zusammenfassung</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="./pictures/PokeDB.png" alt="Poke Database Logo">
+                    <h3>PokeDB</h3>
+                    <p>Ein "Pokedex", mit Python GUI und einer SQL Datenbank anbindung. Zeigt Pokemonnamen, Sprites und Text uvm.</p>
+                    <div class="techstack">
+                        Python • MariaDB / XAMPP
                     </div>
                     
                     <div class="buttons">
