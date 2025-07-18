@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Meine Webseite</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="icon" href="./pictures/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo-nav">
+                <div class="logo">
+                    <img src="./pictures/pixel avatar cropped.png" alt="MarcCark Avatar. A Slowpoke with a NY cap">
+                </div>
+                <button id="burger-toggle" class="burger-menu" aria-label="Menü öffnen">
+                    ☰
+                </button>
+
+                <div class="nav">
+                            <a class="button-active" href="index.html">Startseite</a>
+                            <a href="project.html">Projekte</a>
+                            <a href="impressum.html">Impressum</a>
+                </div>
+            </div>
+
+        </div>
+
+        
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-overlay">
+                <h1>Marc Brunmayr</h1>
+                <p>zukünftiger Fachinformatiker für Anwendungsentwicklung</p>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="about-me">
+                <p>Mein Name ist Marc und ich befinde mich aktuell in der Umschulung zum Fachinformatiker für Anwendungsentwicklung. Mein Ziel ist es, fundierte Kenntnisse in Softwareentwicklung aufzubauen und praxisnah anzuwenden. <br>
+
+            Vor meiner Umschulung war ich im Einzelhandel tätig – diese Erfahrung hat mir gezeigt, wie wichtig strukturierte Prozesse, Kundenorientierung und Zuverlässigkeit sind. Genau diese Werte bringe ich jetzt in meine neue berufliche Richtung ein. <br>
+
+            In meiner Freizeit programmiere ich eigene Projekte, bilde mich kontinuierlich weiter und bin immer auf der Suche nach Möglichkeiten, mich fachlich und persönlich weiterzuentwickeln. Diese Webseite soll einen kleinen Einblick in meinen Weg und meine Fähigkeiten geben.</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <section class="skills">
+                <h2 class="skills-heading">Skills:</h2>
+                <div class="skills-chart">
+                    <div class="skills-list">
+                    <!-- Skills werden per JavaScript generiert -->
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        
+
+        <div class="container">
+            <div class="certificate-container">
+                <div class="header-certificate">
+                    <h1 class="he">Zertifikate und Badges:</h1>
+                </div>
+                <div class="certificate">
+                    <img src="./pictures/agilescrum.png" alt="agilescrum certificate picture">
+                    <img src="./pictures/IBM_Z_XPLORE_Concepts.png" alt="IBM Z XPLORE Badge picture">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>E-Mail:<a href="mailto:deine@email.de"> brunmayrmarcmartin@gmail.com</a></p>
+            <p>Tel: 0176/63034733 / </p>
+            <a class="github-link" href="https://github.com/MarcCark">GitHub.com/MarcCark</a>
+        </div>
+    </footer>
+
+    <div id="privacy-popup" class="privacy-popup">
+    <p>Diese Website verwendet keine Cookies oder Tracker. Es gelten die Hinweise im <a href="impressum.html">Impressum</a>.</p>
+    <button id="accept-privacy">OK</button>
+    </div>
+
+
+    <script src="js.js"></script>
+</body>
+</html>

@@ -1,0 +1,520 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #065e69;
+    color: #fff;
+    padding: 1px;
+}
+
+header .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.logo-nav {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.logo img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.nav a {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    background-color: #0a9396;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.nav a:hover {
+    background-color: #b2e5e6;
+    color: black;
+}
+
+.nav a.button-active {
+    background-color: #b2e5e6;
+    color: black;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+}
+
+main {
+    flex: 1;
+    background-color: #b2e5e6;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Libre+Baskerville&display=swap');
+
+.hero {
+  background-image: url('./pictures/hero-background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.02); /* optional zarter Schleier */
+}
+
+.hero-overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;     /* horizontal zentriert */
+  justify-content: center; /* vertikal zentriert */
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 1);
+}
+
+
+.hero h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.about-me {
+  max-width: 800px;
+  margin: 0 auto;     
+  padding: 0 1rem;    
+}
+
+.skills {
+  max-width: 800px;
+  margin: 0 auto;     
+  padding: 0 1rem;  
+}
+
+.certificate-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 4rem auto 0 auto;
+}
+
+.certificate {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.certificate img {
+    width: 100%;
+    max-width: 150px;
+}
+
+footer {
+    background-color: #065e69;
+    color: #ccc;
+    text-align: center;
+    padding: 1rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* MEDIA QUERIES */
+
+/* Tablet: ab 600px */
+@media (min-width: 600px) {
+    header .container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav {
+        flex-direction: row;
+        width: auto;
+    }
+
+    .hero {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .hero-text {
+        max-width: 600px;
+        margin-right: 4rem;
+        text-align: left;
+    }
+
+    .hero-image img {
+        margin-right: 0;
+    }
+
+    .certificate {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+a[href^="mailto:"] {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+a[href^="mailto:"]:hover {
+    text-decoration: underline;
+    color: #0a9396;
+}
+
+a.github-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+a.github-link:hover {
+    text-decoration: underline;
+    color: #0a9396; /* oder deine Wunschfarbe */
+}
+
+
+
+/* Project Section ########################################################################### */
+
+.projects-section {
+  padding: 5rem 1rem;
+  background-color: #b2e5e6;
+}
+
+.projects-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #065e69;
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.project-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  max-width: 320px;
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.project-card img {
+  width: 100%;
+  max-height: 180px;
+  object-fit:scale-down;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.project-card h3 {
+  margin: 0.5rem 0;
+}
+
+.project-card .techstack {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+.project-card .buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-card .btn {
+  background-color: #0a9396;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.project-card .btn.secondary {
+  background-color: #ccc;
+  color: #333;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 0.5rem 0;
+  border-radius: 4px;
+  min-width: 160px;
+  z-index: 1000;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown.show .dropdown-menu {
+  display: block;
+}
+
+
+
+/* Impressum ########################################################################### */
+
+.impressum-container {
+  
+  text-align: center;
+  font-size: large;
+  line-height: 2;
+}
+
+/* Skill Leiste ########################################################################### */
+
+.skill-item {
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.skill-title {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.skill-bar {
+  background-color: #ddd;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.skill-level {
+  background-color: #0a9396;
+  height: 100%;
+  width: var(--target-width, 0%);
+  transition: width 1s ease-out;
+}
+
+.skill-desc {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 0.75rem;
+  margin-top: 0.5rem;
+  border-radius: 6px;
+  transition: max-height 0.4s ease, padding 0.2s ease;
+  font-style: italic;
+  color: #333;
+}
+
+/* Sichtbar machen */
+.skill-item.active .skill-desc {
+  max-height: 500px;
+  padding: 0;
+  background-color: transparent;
+  color: #444;
+  font-style: normal;
+}
+
+
+
+/* Burger Menü############################################################ */
+
+/* Burger-Menü Standardzustand: Desktop → nicht anzeigen */
+.burger-menu {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+
+/* Nur für Mobile: unter 600px Bildschirmbreite */
+@media (max-width: 599px) {
+
+    /* Header-Inhalt horizontal: Logo links, Burger rechts */
+    header .container {
+        flex-direction: row;                  /* statt column → nebeneinander */
+        justify-content: space-between;       /* Platz zwischen Logo & Burger */
+        align-items: center;                  /* vertikal zentriert */
+        gap: 1rem;
+    }
+
+    .hero h1 {
+      font-size: 2rem;   /* vorher: 4rem → reduziert */
+    }
+
+    .hero p {
+      font-size: 1rem;   /* vorher: 1.5rem → reduziert */
+      margin-top: 0.5rem;
+      padding: 0 1rem;   /* etwas Rand links/rechts */
+    }
+  
+
+
+    /* Logo + Text links gruppieren */
+    .logontext {
+        flex-grow: 1;                         /* nimmt den verfügbaren Platz */
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    /* Burger-Button sichtbar & ganz rechts */
+    .burger-menu {
+        display: block;
+        margin: 0;                            /* zentrieren verhindern */
+        padding: 0.5rem 1rem;
+    }
+
+    /* Navigation ist zunächst versteckt */
+    .nav {
+        display: none;
+        flex-direction: column;
+        gap: 0.5rem;
+        background-color: #065e69;
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    /* Navigation sichtbar bei JS-Klasse ".show" */
+    .nav.show {
+        display: flex;
+    }
+}
+
+/* Datenschutz-Popup ############################################################ */
+
+.privacy-popup {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 90%;
+  width: 500px;
+  background-color: #ffffff;
+  color: #222;
+  border: 1px solid #ccc;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  z-index: 9999;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.privacy-popup.show {
+  display: block;
+  opacity: 1;
+}
+
+.privacy-popup p {
+  margin: 0 0 1rem 0;
+  text-align: center;
+}
+
+.privacy-popup a {
+  color: #0a9396;
+  text-decoration: underline;
+}
+
+.privacy-popup button {
+  background-color: #0a9396;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.95rem;
+  transition: background-color 0.3s ease;
+}
+
+.privacy-popup button:hover {
+  background-color: #065e69;
+}
